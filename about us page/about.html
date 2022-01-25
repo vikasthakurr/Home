@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+
+    <link rel="icon" href="../pappu.png">
+
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="container header">
+        <nav class="nav">
+            <div class="logo">
+                <h1>Pappu<span class="next">Progarammer</span></h1>
+            </div>
+            <div class="nav_menu" id="nav_menu">
+                <button class="close_btn" id="close_btn">
+                    <i class="ri-close-fill"></i>
+                </button>
+                <ul class="nav_menu_list">
+                    <li class="nav_menu_item">
+                        <a href="#" class="nav_menu_link">Home</a>
+                    </li>
+                    <li class="nav_menu_item">
+                        <a href="#" class="nav_menu_link">about</a>
+                    </li>
+                    <li class="nav_menu_item">
+                        <a href="#" class="nav_menu_link">Contact</a>
+                    </li>
+                    <li class="nav_menu_item">
+                        <a href="#" class="nav_menu_link">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="toggle_btn" id="toggle_btn">
+                <i class="ri-menu-line" style="color: black;"></i>
+            </button>
+        </nav>
+        <hr>
+    </header>
+    <div class="about-section">
+        <div class="inner-container">
+            <h1>
+                About Us
+                <div class="border"></div>
+            </h1>
+            <p class="text">
+                We are pappu programmer and we provide the best platform for new students and also for tutor who want to explore in the field of teaching. we also provide a platform for programmer to find a same skill set level oof programer by which they can collaborate
+                and can do coding in pair which is very useful for improving programming skill and also for better understanding of code. click on read here to to read more...
+            </p>
+            <button>Read More.</button>
+        </div>
+    </div>
+    <script>
+        const navId = document.getElementById("nav_menu"),
+ ToggleBtnId = document.getElementById("toggle_btn"),
+ CloseBtnId = document.getElementById("close_btn");
+
+ToggleBtnId.addEventListener("click", () => {
+ navId.classList.add("show");
+});
+
+CloseBtnId.addEventListener("click", () => {
+ navId.classList.remove("show");
+});
+    </script>
+</body>
+
+</html>

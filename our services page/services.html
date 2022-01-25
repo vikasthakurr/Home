@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>our Services</title>
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="icon" href="../pappu.png">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        ul li {
+ list-style-type: none;
+}
+a {
+ text-decoration: none;
+}
+@media screen and (min-width: 1040px) {
+    .header {
+    height: var(-fixed-header-height);
+    padding: 0 1.7rem;
+   }
+   .nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .logo h1 {
+    margin: 20px 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.logo .next{
+    font-family: 'Dancing Script', cursive;
+    color: #ff9204;
+}
+   .nav_menu_list {
+    display: flex;
+    align-items: center;
+   }
+   .nav_menu_list .nav_menu_item {
+    margin: 0 2rem;
+   }
+   .nav_menu_item .nav_menu_link {
+    font-size: 16.5px;
+    line-height: 27px;
+    color: black;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+   }
+   .nav_menu_link:hover {
+    color: rgb(255, 163, 57);
+   }
+   .toggle_btn {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(-lg-heading);
+    z-index: 4;
+   }
+   .nav_menu,
+   .close_btn {
+    display: none;
+   }
+   .show {
+    right: 3% !important;
+   }
+}
+@media screen and (min-width: 768px) {
+    .toggle_btn {
+    display: none;
+    }
+    .nav_menu {
+    display: block;
+    }
+   }
+   @media screen and (max-width: 768px) {
+    .logo h2 {
+    font-size: 23px;
+    }
+    .nav_menu {
+    position: fixed;
+    width: 93%;
+    height: 100%;
+    display: block;
+    top: 2.5%;
+    right: -100%;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    z-index: 50;
+    transition: 0.4s;
+    }
+    .nav_menu_list {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4rem;
+    }
+    .nav_menu_list .nav_menu_item {
+    margin: 1rem 0;
+    }
+    .nav_menu_item .nav_menu_link {
+    font-size: 18px;
+    }
+   }
+   .hr{
+       color: red;
+   }
+   @media screen and (max-width: 768px) {
+    .logo h2 {
+    font-size: 23px;
+    }
+    .nav_menu {
+    position: fixed;
+    width: 93%;
+    height: 100%;
+    display: block;
+    top: 2.5%;
+    right: -100%;
+    background-image: linear-gradient(#ff9204, #ffd49b);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    z-index: 50;
+    transition: 0.4s;
+    }
+    .nav_menu_list {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4rem;
+    }
+    .nav_menu_list .nav_menu_item {
+    margin: 1rem 0;
+    }
+    .nav_menu_item .nav_menu_link {
+    font-size: 18px;
+    }
+    .close_btn {
+    display: block;
+    position: absolute;
+    right: 10%;
+    font-size: 25px;
+    color: black;
+    }
+    .close_btn:hover {
+    color: #000;
+    }
+}
+    </style>
+        
+</head>
+
+<body>
+    <header class="container header">
+        <nav class="nav">
+            <div class="logo">
+                <h1>Pappu<span class="next">Progarammer</span></h1>
+            </div>
+            <div class="nav_menu" id="nav_menu">
+                <button class="close_btn" id="close_btn">
+                    <i class="ri-close-fill"></i>
+                </button>
+                <ul class="nav_menu_list">
+                    <li class="nav_menu_item">
+                        <a href="#" class="nav_menu_link">Home</a>
+                    </li>
+                    <li class="nav_menu_item">
+                        <a href="#" class="nav_menu_link">about</a>
+                    </li>
+                    <li class="nav_menu_item">
+                        <a href="#" class="nav_menu_link">Contact</a>
+                    </li>
+                    <li class="nav_menu_item">
+                        <a href="#" class="nav_menu_link">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="toggle_btn" id="toggle_btn">
+                <i class="ri-menu-line"></i>
+            </button>
+        </nav>
+        <hr class="hr">
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="box">
+                <h2>01</h2>
+                <h3>Learn</h3>
+                <p>
+                    Learn any programming language that you think you can learn or by which you can go ahead in this competetive world i.e C language, C++, java, python,react and Data structures and algorithms. etc.
+                </p>
+            </div>
+    
+            <div class="box">
+                <h2>02</h2>
+                <h3>Teach</h3>
+                <p>
+                    Be a tutor for other students who is learning or new to programming world.select any language, C++, java, python,react and Data structures and algorithms and provide student a guidance by which they can learn and evolve.
+                </p>
+            </div>
+    
+            <div class="box">
+                <h2>03</h2>
+                <h3>Pair Programming</h3>
+                <p>
+                    Find a partner online for doing programming by which you can learn in a better way than you are doing right now. in this way you can improve your skills and at the same time you can help others to improve and learn.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const navId = document.getElementById("nav_menu"),
+ ToggleBtnId = document.getElementById("toggle_btn"),
+ CloseBtnId = document.getElementById("close_btn");
+
+ToggleBtnId.addEventListener("click", () => {
+ navId.classList.add("show");
+});
+
+CloseBtnId.addEventListener("click", () => {
+ navId.classList.remove("show");
+});
+    </script>
+</body>
+
+</html>
