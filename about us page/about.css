@@ -1,5 +1,4 @@
 * {
-   
     font-family: sans-serif;
     box-sizing: border-box;
 }
@@ -12,7 +11,7 @@ body {
 
 .about-section {
     margin-top: -15px;
-    background: url(team.jpg) no-repeat left;
+    /*background: url(team.jpg) no-repeat left;*/
     background-size: 70%;
     background-color: #fdfdfd;
     overflow: hidden;
